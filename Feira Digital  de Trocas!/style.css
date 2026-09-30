@@ -1,0 +1,380 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: #f4f7fb;
+    color: #1f2937;
+    line-height: 1.6;
+    padding: 30px;
+}
+
+/* ==========================
+   HEADER
+========================== */
+
+header {
+    background: linear-gradient(135deg, #1e3a8a, #2563eb);
+    color: white;
+    text-align: center;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,.15);
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 2.3rem;
+    margin-bottom: 8px;
+}
+
+header p {
+    font-size: 17px;
+    opacity: .95;
+}
+
+/* ==========================
+   MAIN
+========================== */
+
+main {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* ==========================
+   SECTIONS
+========================== */
+
+section {
+    background: white;
+    border-radius: 15px;
+    padding: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.08);
+}
+
+h2 {
+    color: #1e3a8a;
+    margin-bottom: 20px;
+    border-left: 6px solid #2563eb;
+    padding-left: 10px;
+}
+
+/* ==========================
+   FORMULÁRIO
+========================== */
+
+form {
+    display: grid;
+    gap: 15px;
+}
+
+label {
+    font-weight: bold;
+    color: #374151;
+}
+
+input,
+select,
+textarea {
+
+    width: 100%;
+    padding: 12px;
+
+    border: 1px solid #d1d5db;
+
+    border-radius: 10px;
+
+    font-size: 15px;
+
+    transition: .3s;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+
+    outline: none;
+
+    border-color: #2563eb;
+
+    box-shadow: 0 0 0 3px rgba(37,99,235,.2);
+
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================
+   BOTÃO CADASTRAR
+========================== */
+
+button {
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    padding: 12px;
+    font-size: 15px;
+    font-weight: bold;
+    transition: .3s;
+}
+
+button[type="submit"] {
+    background: #2563eb;
+    color: white;
+}
+
+button[type="submit"]:hover {
+    background: #1d4ed8;
+    transform: scale(1.02);
+}
+
+/* ==========================
+   PESQUISA E FILTROS
+========================== */
+
+#pesquisa,
+#filtroCategoria,
+#filtroSituacao {
+    margin-bottom: 12px;
+}
+
+/* ==========================
+   RESUMO
+========================== */
+
+#resumo {
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit,minmax(180px,1fr));
+
+    gap: 15px;
+
+}
+
+#resumo p {
+
+    background: linear-gradient(135deg,#2563eb,#1e40af);
+
+    color: white;
+
+    text-align: center;
+
+    padding: 18px;
+
+    border-radius: 12px;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+}
+
+/* ==========================
+   LISTA
+========================== */
+
+#listaItens {
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+
+    gap: 20px;
+
+}
+
+/* ==========================
+   CARD
+========================== */
+
+.card {
+
+    background: white;
+
+    border-radius: 15px;
+
+    border: 1px solid #e5e7eb;
+
+    padding: 20px;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,.08);
+
+    transition: .3s;
+
+}
+
+.card:hover {
+
+    transform: translateY(-6px);
+
+    box-shadow: 0 12px 25px rgba(0,0,0,.12);
+
+}
+
+.card h3 {
+
+    color: #1e3a8a;
+
+    margin-bottom: 12px;
+
+}
+
+.card p {
+
+    margin-bottom: 8px;
+
+}
+
+/* ==========================
+   STATUS
+========================== */
+
+.disponivel {
+
+    border-left: 7px solid #22c55e;
+
+}
+
+.reservado {
+
+    border-left: 7px solid #ef4444;
+
+    background: #fff8f8;
+
+}
+
+.troca {
+
+    border-top: 6px solid #3b82f6;
+
+}
+
+.doacao {
+
+    border-top: 6px solid #f59e0b;
+
+}
+
+/* ==========================
+   BOTÕES DOS CARDS
+========================== */
+
+.btn-reservar {
+
+    background: #2563eb;
+
+    color: white;
+
+    margin-top: 10px;
+
+    margin-right: 8px;
+
+}
+
+.btn-reservar:hover {
+
+    background: #1d4ed8;
+
+}
+
+.btn-excluir {
+
+    background: #dc2626;
+
+    color: white;
+
+}
+
+.btn-excluir:hover {
+
+    background: #b91c1c;
+
+}
+
+/* ==========================
+   MENSAGENS
+========================== */
+
+#mensagem {
+
+    text-align: center;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    padding: 10px;
+
+}
+
+.sucesso {
+
+    color: #15803d;
+
+}
+
+.erro {
+
+    color: #dc2626;
+
+}
+
+#nenhumResultado {
+
+    display: none;
+
+    text-align: center;
+
+    padding: 20px;
+
+    font-weight: bold;
+
+    color: #6b7280;
+
+}
+
+/* ==========================
+   RESPONSIVO
+========================== */
+
+@media(max-width:768px){
+
+    body{
+
+        padding:15px;
+
+    }
+
+    header h1{
+
+        font-size:1.8rem;
+
+    }
+
+    section{
+
+        padding:18px;
+
+    }
+
+    button{
+
+        width:100%;
+        margin-top:8px;
+
+    }
+
+    .btn-reservar{
+
+        margin-right:0;
+
+    }
+
+}
